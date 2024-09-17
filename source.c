@@ -9,7 +9,7 @@
 
  
 
-#include "matrixlibrary.h"
+#include "matrix.h"
 
 struct mat {
 	int rows;
@@ -20,7 +20,7 @@ struct mat {
 	  double d;
 	  float f;
 	  char c;
-	};
+	}; 
 
 
 };
