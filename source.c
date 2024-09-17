@@ -349,21 +349,21 @@ long* parseRowValues(char* rowValues, int num_cols) {
 
  
 
-void makeMatrix(struct mat *matrix) { //
+void makeMatrix(struct mat *matrix) { //void pointer to the mat struct this make the matrix 
 
  
 
-    int num_rows = matrix->rows;
+    int num_rows = matrix->rows; 
 
     int num_cols = matrix->cols;
 
  
 
-    long mvalues[num_rows][num_cols];
+    long mvalues[num_rows][num_cols]; //this creates a long array with the number of rows and cols 
 
  
 
-    struct mat *tempMatrix = malloc(sizeof(struct mat));
+    struct mat *tempMatrix = malloc(sizeof(struct mat)); 
 
  
 
@@ -380,7 +380,7 @@ void makeMatrix(struct mat *matrix) { //
         printf("Row values: %s\n", inputRowValues);
 
        
-for(int j = 0; j < num_cols; j++){
+  for(int j = 0; j < num_cols; j++){
 
             long value = rowValues[j];
 
